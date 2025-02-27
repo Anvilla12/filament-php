@@ -1,23 +1,61 @@
-/.phpunit.cache
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+# =============================================
+# Archivos sensibles y de entorno
+# =============================================
 .env
 .env.backup
 .env.production
-.phpactor.json
+.auth.json
+
+# =============================================
+# Dependencias y paquetes
+# =============================================
+/vendor/
+/node_modules/
+
+# =============================================
+# Archivos de construcción y assets
+# =============================================
+/public/build/
+/public/hot/
+/public/storage/
+/public/vendor/filament/
+
+# =============================================
+# Archivos de caché y logs
+# =============================================
+/.phpunit.cache
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
 npm-debug.log
 yarn-error.log
-/auth.json
-/.fleet
-/.idea
-/.nova
-/.vscode
-/.zed
+*.log
+
+# =============================================
+# Archivos de configuración local y de desarrollo
+# =============================================
+Homestead.json
+Homestead.yaml
+.phpactor.json
+/.fleet/
+/.idea/
+/.nova/
+/.vscode/
+/.zed/
+
+# =============================================
+# Archivos de Laravel
+# =============================================
+/storage/*.key
+/storage/pail/
+/storage/*
+!/storage/framework
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/storage/app/*
+/storage/filament/*
+
+# =============================================
+# Archivos de sistema y metadatos
+# =============================================
+.DS_Store
